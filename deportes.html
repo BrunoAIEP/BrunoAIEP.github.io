@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>El Faro</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+        a {
+            text-decoration: underline;
+            font-weight: normal;
+          }
+          
+          a:hover {
+            text-decoration: none;
+            font-weight: bold;
+          }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>El Faro</title>
 </head>
+
+
 <body>
-        <header>EL FARO</header>
+        <header id="titulo">EL FARO</header>
         <br/><br/>
         <img src="media/logo.jpg" width="200" height="100"/>
         <br/><br/>
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+
         <h5>Seleccione una catogoría del menú</h5>
         <ul class="Menú">
             <li><a href="index.html">Inicio</a></li>
@@ -25,9 +47,9 @@
     
     <hr>
 
-<table>
-    <table>
-        <tr>   
+<div class="grid">
+    <main class="content">
+        <article class="noticia">  
                 <h6>01 de Abril de 2023 | 20:36</h6>
                 <h1>
                     Chile dio pelea, pero cayó goleado ante el poderoso Brasil en su debut en el Sudamericano Sub 17
@@ -42,15 +64,13 @@
                     <p>Ya en el cierre, cuando todo estaba definido, el zaguero Da Mata (87') clavó un derechazo tremendo para anotar el 3-0, venciendo al meta Francisco Valdés. Mal comienzo de la "Roja" juvenil, que ahora chocará con Uruguay, este próximo lunes desde las 17:30 horas, en un duelo clave para seguir luchando por uno de los tres cupos que da esta fase grupal para el hexagonal final.
     
                 </p>  
-        </tr>
-    </table>
-</table>                    
-            
-<hr>
+        </article>
+    </main>
+</div>
 
-<table>
-    <table>
-        <tr>
+<div class="grid">
+    <main class="content">
+        <article class="noticia"> 
             <h6>01 de Abril de 2023 | 10:20</h6>
             <h1>
                 Con 45 jugadoras: oficializan la primera nómina de la selección femenina de básquetbol de cara a Santiago 2023
@@ -73,16 +93,13 @@
             <p>El inicio formal del proceso será en una concentración para el desarrollo de entrenamientos entre el miércoles 5 y el jueves 6 de abril en el Centro de Entrenamiento Olímpico, donde participarán 18 jugadoras de las regiones Metropolitana y Valparaíso
 
             </p>
+        </article>
+    </main>
+</div>
 
-        </tr>
-    </table>
-</table>  
-
-<hr>
-
-<table>
-    <table>
-        <tr>  
+<div class="grid">
+    <main class="content">
+        <article class="noticia"> 
         <h6>26 de Abril de 2021 | 18:42</h6>
         <h1>
             Jarry se proclamó campeón del Challenger de Salinas y volvió a ganar un título después del calvario que lo tuvo un año sin jugar
@@ -121,12 +138,17 @@
         <p>Es el cuarto Challenger en la carrera del chileno. En 2017 ganó los de Santiago, Quito y Medellín. Subirá hasta el puesto 367° del ranking.
 
         </p>
-        </tr>
-    </table>
-</table>
-   
-<hr>
+        </article>
+    </main>
+</div>
    
 </body>
+
+<footer>
+    <section>
+        <a href="#titulo">Ir al inicio</a>
+    </section>
+    <p>Copyright 2023</p>
+</footer>
 
 </html>

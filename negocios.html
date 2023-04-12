@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>El Faro</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+        a {
+            text-decoration: underline;
+            font-weight: normal;
+          }
+          
+        a:hover {
+            text-decoration: none;
+            font-weight: bold;
+          }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>El Faro</title>
 </head>
+
 <body>
-        <header>EL FARO</header>
+        <header id="titulo">EL FARO</header>
         <br/><br/>
         <img src="media/logo.jpg" width="200" height="100"/>
         <br/><br/>
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+
         <h5>Seleccione una catogoría del menú</h5>
         <ul class="Menú">
             <li><a href="index.html">Inicio</a></li>
@@ -25,9 +46,9 @@
               
     <hr>
 
-<table>
-    <table>
-        <tr>
+<div class="grid">
+    <main class="content">
+        <article class="noticia"> 
             <h6> 15 de julio 2023 </h6>
 
             <h1>
@@ -49,16 +70,13 @@
                 endeudarte más de lo que lo harías si tuvieras que pagarlos en su totalidad cada vez".</p>
             <p> Pero Apple dice que la nueva función está "diseñada pensando en la salud financiera de los usuarios".</p> 
             <img src= "media/iphone.jpg"> 
-        </tr>
-    </table>
-</table>
+        </article>
+    </main>
+</div>
 
-<hr>
-    
-<table>
-    <table>
-        <tr>
-
+<div class="grid">
+    <main class="content">
+        <article class="noticia"> 
             <h6> 20 de octubre del 2023 </h6> 
             <h1> Ni con recorte de precios: Tesla vende menos de lo que produce</h1>
             
@@ -72,51 +90,54 @@
 
             <img src="media/autotesla.jpg"  height="400" /> 
 
-        </tr>
-    </table>
-</table>
-
-<hr>
+        </article>
+    </main>
+</div>
     
-<table>
-    <table>
-        <tr>   
-        <h6> 20 de noviembre del 2023</h6>
-        <h1> 
-        Exportaciones de Nuevo León crecen por encima de la media nacional en 2022
-        </h1>
+<div class="grid">
+    <main class="content">
+        <article class="noticia">   
+            <h6> 20 de noviembre del 2023</h6>
+            <h1> 
+            Exportaciones de Nuevo León crecen por encima de la media nacional en 2022
+            </h1>
 
-        <h6> Negocios </h6>
+            <h6> Negocios </h6>
 
-        <p> Las exportaciones totales del país alcanzaron 521,010 millones de dólares,con un crecimiento de 18.2% respecto al año previo, mientras que las exportaciones de Nuevo León tuvieron un alza de 23.3%,
+            <p> Las exportaciones totales del país alcanzaron 521,010 millones de dólares,con un crecimiento de 18.2% respecto al año previo, mientras que las exportaciones de Nuevo León tuvieron un alza de 23.3%,
          según datos del Instituto Nacional de Estadística y Geografía (Inegi).</p>  
-        <P> Monterrey, NL. Al cierre de 2022, las exportaciones de Nuevo León registraron un valor de 51,164 millones de dólares,
-        lo que significa un crecimiento anual de 23.3% comparado con los 41,496 millones de dólares registrados el año previo, y aportaron el 9.8% de las exportaciones totales, de acuerdo con cifras del Instituto Nacional de Estadística y Geografía (Inegi).
-        </P>
-        <P>El sector fabricación de equipo de transporte registró un crecimiento del 24% respecto a 2021, y representó el 35.3% de las exportaciones totales.
-        La fabricación de accesorios, aparatos eléctricos y equipo de generación de energía eléctrica registró un 28.6% de crecimiento con una participación de 17.3% a nivel nacional,
-        mientras el sector de fabricación de maquinaria y equipo tuvo un crecimiento de 26.5% y una participación de 11.2% del total de las exportaciones mexicanas.</P> 
-        <p> La fabricación de accesorios, aparatos eléctricos y equipo de generación de energía eléctrica registró un 28.6% de crecimiento con una participación de 17.3% a nivel nacional, 
+            <P> Monterrey, NL. Al cierre de 2022, las exportaciones de Nuevo León registraron un valor de 51,164 millones de dólares,
+            lo que significa un crecimiento anual de 23.3% comparado con los 41,496 millones de dólares registrados el año previo, y aportaron el 9.8% de las exportaciones totales, de acuerdo con cifras del Instituto Nacional de Estadística y Geografía (Inegi).
+            </P>
+            <P>El sector fabricación de equipo de transporte registró un crecimiento del 24% respecto a 2021, y representó el 35.3% de las exportaciones totales.
+            La fabricación de accesorios, aparatos eléctricos y equipo de generación de energía eléctrica registró un 28.6% de crecimiento con una participación de 17.3% a nivel nacional,
+            mientras el sector de fabricación de maquinaria y equipo tuvo un crecimiento de 26.5% y una participación de 11.2% del total de las exportaciones mexicanas.</P> 
+            <p> La fabricación de accesorios, aparatos eléctricos y equipo de generación de energía eléctrica registró un 28.6% de crecimiento con una participación de 17.3% a nivel nacional, 
             mientras el sector de fabricación de maquinaria y equipo tuvo un crecimiento de 26.5% y una participación de 11.2% del total de las exportaciones mexicanas.</p>
-        <p> Estos tres sectores representan el 63.8% de las exportaciones estatales. La Secretaría de Economía de Nuevo León destacó la recuperación del sector automotriz al alcanzar una participación similar a la de 2019, cuando logró su nivel más alto.
-        </p> 
-        <p> El secretario de Economía estatal, Iván Rivas Rodríguez, comentó que el buen desempeño de las exportaciones se debe a una mayor demanda del mercado estadounidense y a
+            <p> Estos tres sectores representan el 63.8% de las exportaciones estatales. La Secretaría de Economía de Nuevo León destacó la recuperación del sector automotriz al alcanzar una participación similar a la de 2019, cuando logró su nivel más alto.
+            </p> 
+            <p> El secretario de Economía estatal, Iván Rivas Rodríguez, comentó que el buen desempeño de las exportaciones se debe a una mayor demanda del mercado estadounidense y a
          la llegada de nuevas inversiones al estado por la tendencia del nearshoring.</p> 
-        <p> De acuerdo a la información del Programa de la industria manufacturera, maquiladora y de servicios de exportación (IMMEX), las empresas exportadoras asentadas en Nuevo León bajo este programa presentan un valor más alto de insumos nacionales utilizados,
+            <p> De acuerdo a la información del Programa de la industria manufacturera, maquiladora y de servicios de exportación (IMMEX), las empresas exportadoras asentadas en Nuevo León bajo este programa presentan un valor más alto de insumos nacionales utilizados,
             en comparación de la media nacional y los estados de la frontera norte.</p>
-        <p>“Podemos considerar que en Nuevo León hay una mayor proveeduría y sus exportaciones contienen un mayor valor agregado en su cadena de suministros”, dijo Rivas Rodríguez.</p>
+            <p>“Podemos considerar que en Nuevo León hay una mayor proveeduría y sus exportaciones contienen un mayor valor agregado en su cadena de suministros”, dijo Rivas Rodríguez.</p>
 
-        <P>Se estima que el valor agregado directo de las exportaciones genera alrededor del 9.6% del Producto Interno Bruto (PIB) estatal,
-        de acuerdo al estudio Determinantes de la Competitividad del Estado de Nuevo León, del Centro de Investigaciones Económicas de la UANL y la Secretaría de Economía estatal.
-        </P>
+            <P>Se estima que el valor agregado directo de las exportaciones genera alrededor del 9.6% del Producto Interno Bruto (PIB) estatal,
+            de acuerdo al estudio Determinantes de la Competitividad del Estado de Nuevo León, del Centro de Investigaciones Económicas de la UANL y la Secretaría de Economía estatal.
+            </P>
 
-        <img src= "media/puertolosangeles.webp"  height="400" />
-        </tr>
-    </table>
-</table>
-
-<hr>
+            <img src="media/puertolosangeles.webp"  height="400" />
+        </article>
+    </main>
+</div>
 
 </body>
+
+<footer>
+    <section>
+        <a href="#titulo">Ir al inicio</a>
+    </section>
+    <p>Copyright 2023</p>
+</footer>
     
 </html>

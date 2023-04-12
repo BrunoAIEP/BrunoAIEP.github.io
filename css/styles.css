@@ -1,0 +1,106 @@
+header {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+title {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+
+.Menú {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+
+.noticia {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+h1 {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+h5 {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+
+h6 {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Sofia Sans Condensed' sans-serif; 
+}
+
+body {
+    background-color: #f5f5f5;
+}
+.grid{
+    background: white;
+    color: black;
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;   
+}
+
+.grid > .content,
+.grid > .noticia,
+.grid > div {
+    background: white;
+    padding: 20px;
+    border: 1px solid black;
+    grid-column: auto;
+}
+
+.grid > .content {
+    grid-column: auto;
+}
+
+.content > .noticia {
+    background: white;
+    padding: 20px;
+    margin-top: 5px;
+    color:black;
+    transition: all 0.5s ease;
+}
+
+.content .noticia h6
+.content .noticia h1
+.content .noticia p {
+    padding: 10px;
+
+}
+
+.content > .noticia:hover {
+    cursor: pointer;
+    color: white;
+    background: black;
+}
+
+
+footer {
+    background-color: #c9d2d0;
+    padding: 1rem;
+    color: #31231e;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a{
+    transition: color 0.3s ease;
+    color: #31231e;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
+

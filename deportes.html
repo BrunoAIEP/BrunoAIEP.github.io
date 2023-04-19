@@ -24,6 +24,58 @@
 
 
 <body>
+
+    <div id="date">
+        <script>
+            // Función para obtener la fecha actual y actualizar el contenido del elemento HTML
+            function updateDate() {
+                // Obtener la fecha actual
+                var now = new Date();
+    
+                // Obtener el día, mes y año actuales
+                var day = now.getDate();
+                var month = now.getMonth() + 1; // Los meses se indexan desde 0 (enero) a 11 (diciembre)
+                var year = now.getFullYear();
+    
+                // Agregar ceros delante de los números de un solo dígito
+                day = (day < 10 ? "0" : "") + day;
+                month = (month < 10 ? "0" : "") + month;
+    
+                // Actualizar el contenido del elemento HTML con la fecha actual
+                document.getElementById("date").innerHTML = day + "/" + month + "/" + year;
+            }
+    
+            // Actualizar la fecha cada segundo
+            setInterval(updateDate, 1000);
+        </script>
+    </div>
+
+    <div id="clock">
+        <script>
+            // Función para obtener la hora actual y actualizar el contenido del elemento HTML
+            function updateTime() {
+                // Obtener la hora actual
+                var now = new Date();
+    
+                // Obtener las horas, minutos y segundos actuales
+                var hours = now.getHours();
+                var minutes = now.getMinutes();
+                var seconds = now.getSeconds();
+    
+                // Agregar ceros delante de los números de un solo dígito
+                hours = (hours < 10 ? "0" : "") + hours;
+                minutes = (minutes < 10 ? "0" : "") + minutes;
+                seconds = (seconds < 10 ? "0" : "") + seconds;
+    
+                // Actualizar el contenido del elemento HTML con la hora actual
+                document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+            }
+    
+            // Actualizar la hora cada segundo
+            setInterval(updateTime, 1000);
+        </script>
+    </div>
+    
         <header id="titulo">EL FARO</header>
         <br/><br/>
         <img src="media/logo.jpg" width="200" height="100"/>
@@ -141,7 +193,18 @@
         </article>
     </main>
 </div>
-   
+
+
+
+<h3>Contador de Artículos: <p id ="contador" class="numeroArticulos"></p>
+</h3>
+<script>
+    let noticias = document.querySelectorAll(".noticia").length;
+    const miElemento = document.getElementById("contador");
+    miElemento.innerHTML = noticias;   
+</script>
+
+
 </body>
 
 <footer>

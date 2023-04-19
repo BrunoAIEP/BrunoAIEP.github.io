@@ -15,7 +15,12 @@ title {
 .noticia {
     font-family: 'Sofia Sans Condensed', sans-serif;
 }
+
 h1 {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+h3 {
     font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
@@ -102,5 +107,65 @@ footer a{
 
 footer a:hover {
     color: cornflowerblue;
+}
+
+
+form {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.10);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+
+input, textarea {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    resize: none;
+}
+
+button {
+   color: #fff;
+   padding: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    form{
+        width: 100%;
+    }
+}
+
+#date {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+#clock {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 20px;
+    text-align: right;
+    margin-top: 10px;
 }
 

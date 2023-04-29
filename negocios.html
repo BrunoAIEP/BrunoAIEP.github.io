@@ -1,33 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
-<head>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style> 
-        a {
-            text-decoration: underline;
-            font-weight: normal;
-          }
-          
-        a:hover {
-            text-decoration: none;
-            font-weight: bold;
-          }
-    </style>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
-    <title>El Faro</title>
+<head>   
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+        <title>El Faro</title>
 </head>
 
-<body>
-    
+
+<body class="fondo">
     <div id="date">
         <script>
             // Función para obtener la fecha actual y actualizar el contenido del elemento HTML
@@ -79,129 +68,214 @@
         </script>
     </div>
 
-        <header id="titulo">EL FARO</header>
-        <br/><br/>
-        <img src="media/logo.jpg" width="200" height="100"/>
-        <br/><br/>
+    <header id="titulo"> <!--Identificador para que al presionar el botón ir a inicio lleva la parte de arriba de la web-->
+        <!--Anuncio de la página negocios-->
+        <div class="anuncio">
+            <img src="media/publicidad-cocacolagif.gif" class="img.responsive" >
+        </div>
+      </header>
+        
+       <!--Barra de navegación del menú--> 
+       <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;"> 
+            <div class="container-fluid">
+              <a class="navbar-brand" href=""></a>
+              <img src="media/logo.png" alt="logo" width="100px" height="50px">  <!--Logo de la página en la barra de navegación-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> 
+                  </li><!--Botón que lleva a la página de inicio de la web-->
+                  <!--Menú desplegable con las categorías de la noticia-->
+                  <li class="nav-item dropdown"> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorías
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="general.html">Generales</a></li>
+                      <li><a class="dropdown-item" href="deportes.html">Deportes</a></li>
+                      <li><a class="dropdown-item" href="negocios.html">Negocios</a></li>
+                    </ul> 
+                    <!--Las categorías del menú desplegable-->
+                    <li class="nav-item"> 
+                        <a class="nav-link active" aria-current="page" href="somos.html">¿Quiénes Somos?</a>
+                    </li> <!--Enlace para ir a la sección ¿Quiénes Somos?-->
+                </ul>
+              </div>
+            </div>
+          </nav>   
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      <!--Fuente para tener acceso al Framework Bootstrap y su diseño de Navbar-->
 
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
 
-        <h5>Seleccione una catogoría del menú</h5>
-        <ul class="Menú">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="deportes.html">Deportes</a></li>
-            <li><a href="negocios.html">Negocios</a></li>
-            <li><a href="general.html">Generales</a></li>
-        </ul>
-
-    <hr>
-
+<hr>
+<div class="categoria"> <!--Titulo de la sección de noticias (centrado y mas grande)-->
     <h1>Noticias de Negocios</h1>
-              
-    <hr>
+</div>
+<hr>
 
-<div class="grid animate__animated animate__backInLeft">
+<!--Grids con cada noticia dentro de ellos-->
+
+<!--Inicio Noticia 1-->
+<div class="box animate__animated animate__backInLeft">
     <main class="content">
         <article class="noticia"> 
-            <h6> 15 de julio 2023 </h6>
+            <div class="destacada">
+                <h6> 22 de Abril 2023 </h6>
 
-            <h1>
-            Apple lanza se servicio "compra ahora,paga despues": ¿ como funciona ?
-            </h1>
+                <h1>
+                Apple lanza se servicio "compra ahora,paga despues": ¿ como funciona ?
+                </h1>
+        
+                <h6>Negocios</h6> 
     
-            <h6>Negocios</h6> 
+                <p>
+                Nueva York (CNN)  <span styles= "color:blue"> apple </span> lanzó una opción en su billetera digital este martes que permite a los clientes pagar sus compras en línea a plazos, 
+                convirtiéndose en la última empresa que adopta la tendencia de comprar ahora y pagar después.
+                </p> La nueva función, denominada Apple Pay Later, permite a los clientes fraccionar el pago de sus compras en cuatro plazos a lo largo de seis semanas debiendo abonar el primer plazo en el momento 
+                de la compra. Los usuarios de Apple también pueden solicitar un préstamo en la aplicación Wallet, de entre US$ 50 y 1.000, sin intereses ni comisiones, para realizar compras en línea o dentro de la aplicación.<br>
+                <p> Según un comunicado de la empresa, la opción de pago estará disponible para usuarios seleccionados de Estados Unidos y está previsto ofrecerla a todos los clientes <br>
+                que cumplan los requisitos en los próximos meses. Apple anunció esta función el año pasado.</p> 
+                <p> Pero algunos economistas y defensores de los consumidores han expresado su preocupación por que estos servicios puedan hacer que los compradores se endeuden más.</p>
+                <p> El proceso de pago a plazos hace que parezca que alguien no paga prácticamente nada por el bien o servicio que adquiere, según declaró anteriormente a CNN Terri R. Bradford, especialista en investigación
+                    de sistemas de pago de la Reserva Federal de Kansas City."Así que la posibilidad es que podrías, en tu mente, pensar en todo lo que estás comprando en esos cuatro plazos y, como resultado, 
+                    endeudarte más de lo que lo harías si tuvieras que pagarlos en su totalidad cada vez".</p>
+                <p> Pero Apple dice que la nueva función está "diseñada pensando en la salud financiera de los usuarios".</p> 
+                <img src= "media/iphone.jpg"> 
 
-            <p>
-            Nueva York (CNN)  <span styles= "color:blue"> apple </span> lanzó una opción en su billetera digital este martes que permite a los clientes pagar sus compras en línea a plazos, 
-            convirtiéndose en la última empresa que adopta la tendencia de comprar ahora y pagar después.
-            </p> La nueva función, denominada Apple Pay Later, permite a los clientes fraccionar el pago de sus compras en cuatro plazos a lo largo de seis semanas debiendo abonar el primer plazo en el momento 
-            de la compra. Los usuarios de Apple también pueden solicitar un préstamo en la aplicación Wallet, de entre US$ 50 y 1.000, sin intereses ni comisiones, para realizar compras en línea o dentro de la aplicación.<br>
-            <p> Según un comunicado de la empresa, la opción de pago estará disponible para usuarios seleccionados de Estados Unidos y está previsto ofrecerla a todos los clientes <br>
-            que cumplan los requisitos en los próximos meses. Apple anunció esta función el año pasado.</p> 
-            <p> Pero algunos economistas y defensores de los consumidores han expresado su preocupación por que estos servicios puedan hacer que los compradores se endeuden más.</p>
-            <p> El proceso de pago a plazos hace que parezca que alguien no paga prácticamente nada por el bien o servicio que adquiere, según declaró anteriormente a CNN Terri R. Bradford, especialista en investigación
-                de sistemas de pago de la Reserva Federal de Kansas City."Así que la posibilidad es que podrías, en tu mente, pensar en todo lo que estás comprando en esos cuatro plazos y, como resultado, 
-                endeudarte más de lo que lo harías si tuvieras que pagarlos en su totalidad cada vez".</p>
-            <p> Pero Apple dice que la nueva función está "diseñada pensando en la salud financiera de los usuarios".</p> 
-            <img src= "media/iphone.jpg"> 
+            </div>
+           
         </article>
     </main>
 </div>
+<!--Fin Noticia 1-->
 
+<!--Inicio Noticia 2-->
 <div class="grid animate__animated animate__backInLeft">
     <main class="content">
         <article class="noticia"> 
-            <h6> 20 de octubre del 2023 </h6> 
-            <h1> Ni con recorte de precios: Tesla vende menos de lo que produce</h1>
-            
-            <h6> Negocios </h6> 
+            <div class="nodestacada">
+                <h6> 20 de Abril del 2023 </h6> 
+                <h1> Ni con recorte de precios: Tesla vende menos de lo que produce</h1>
+                
+                <h6> Negocios </h6> 
+    
+                <P> A pesar de un modesto aumento en las ventas trimestrales, el fabricante de vehículos eléctricos Tesla ha producido más vehículos de los que ha entregado a sus clientes.</P>
+                <p> Los concesionarios de automóviles y algunos fabricantes de automóviles se oponen al modelo de ventas de Tesla y han presionado con éxito en un puñado de estados en Estados Unidos para bloquear al fabricante de automóviles eléctricos y evitar que venda directamente sus vehículos a los clientes.
+                 <br> Tesla tiene su estrategia de ventas a través de sus propias tiendas. 
+                <br> Algo parecido a Apple que han vendido directamente sus computadoras, teléfonos y tabletas en centros comerciales y tiendas propias. En estados como Texas, Tesla construye salas de exposición donde los clientes pueden aprender acerca de sus modelos, pero por la ley del estado, no pueden comprarlos en la tienda. Pero, ¿por qué quiere la firma californiana romper con el tradicional sistema de distribuidor independiente? <br>
+                <br> Todd Maron, consejero general de Tesla, dio una explicación detallada ante la comisión federal de comercio de Estados Unidos acerca de por qué Tesla necesita vender sus vehículos de esa manera.</p>
+    
+                <img src="media/autotesla.jpg"  height="400" /> 
 
-            <P> A pesar de un modesto aumento en las ventas trimestrales, el fabricante de vehículos eléctricos Tesla ha producido más vehículos de los que ha entregado a sus clientes.</P>
-            <p> Los concesionarios de automóviles y algunos fabricantes de automóviles se oponen al modelo de ventas de Tesla y han presionado con éxito en un puñado de estados en Estados Unidos para bloquear al fabricante de automóviles eléctricos y evitar que venda directamente sus vehículos a los clientes.
-             <br> Tesla tiene su estrategia de ventas a través de sus propias tiendas. 
-            <br> Algo parecido a Apple que han vendido directamente sus computadoras, teléfonos y tabletas en centros comerciales y tiendas propias. En estados como Texas, Tesla construye salas de exposición donde los clientes pueden aprender acerca de sus modelos, pero por la ley del estado, no pueden comprarlos en la tienda. Pero, ¿por qué quiere la firma californiana romper con el tradicional sistema de distribuidor independiente? <br>
-            <br> Todd Maron, consejero general de Tesla, dio una explicación detallada ante la comisión federal de comercio de Estados Unidos acerca de por qué Tesla necesita vender sus vehículos de esa manera.</p>
-
-            <img src="media/autotesla.jpg"  height="400" /> 
+            </div>
+           
 
         </article>
     </main>
 </div>
-    
+<!--Fin Noticia 2-->
+
+
+<!--Inicio Noticia 3-->
 <div class="grid animate__animated animate__backInLeft">
     <main class="content">
         <article class="noticia">   
-            <h6> 20 de noviembre del 2023</h6>
-            <h1> 
-            Exportaciones de Nuevo León crecen por encima de la media nacional en 2022
-            </h1>
+            <div class="nodestacada">
+                <h6> 20 de Marzo del 2023</h6>
+                <h1> 
+                Exportaciones de Nuevo León crecen por encima de la media nacional en 2022
+                </h1>
+    
+                <h6> Negocios </h6>
+    
+                <p> Las exportaciones totales del país alcanzaron 521,010 millones de dólares,con un crecimiento de 18.2% respecto al año previo, mientras que las exportaciones de Nuevo León tuvieron un alza de 23.3%,
+             según datos del Instituto Nacional de Estadística y Geografía (Inegi).</p>  
+                <P> Monterrey, NL. Al cierre de 2022, las exportaciones de Nuevo León registraron un valor de 51,164 millones de dólares,
+                lo que significa un crecimiento anual de 23.3% comparado con los 41,496 millones de dólares registrados el año previo, y aportaron el 9.8% de las exportaciones totales, de acuerdo con cifras del Instituto Nacional de Estadística y Geografía (Inegi).
+                </P>
+                <P>El sector fabricación de equipo de transporte registró un crecimiento del 24% respecto a 2021, y representó el 35.3% de las exportaciones totales.
+                La fabricación de accesorios, aparatos eléctricos y equipo de generación de energía eléctrica registró un 28.6% de crecimiento con una participación de 17.3% a nivel nacional,
+                mientras el sector de fabricación de maquinaria y equipo tuvo un crecimiento de 26.5% y una participación de 11.2% del total de las exportaciones mexicanas.</P> 
+                <p> La fabricación de accesorios, aparatos eléctricos y equipo de generación de energía eléctrica registró un 28.6% de crecimiento con una participación de 17.3% a nivel nacional, 
+                mientras el sector de fabricación de maquinaria y equipo tuvo un crecimiento de 26.5% y una participación de 11.2% del total de las exportaciones mexicanas.</p>
+                <p> Estos tres sectores representan el 63.8% de las exportaciones estatales. La Secretaría de Economía de Nuevo León destacó la recuperación del sector automotriz al alcanzar una participación similar a la de 2019, cuando logró su nivel más alto.
+                </p> 
+                <p> El secretario de Economía estatal, Iván Rivas Rodríguez, comentó que el buen desempeño de las exportaciones se debe a una mayor demanda del mercado estadounidense y a
+             la llegada de nuevas inversiones al estado por la tendencia del nearshoring.</p> 
+                <p> De acuerdo a la información del Programa de la industria manufacturera, maquiladora y de servicios de exportación (IMMEX), las empresas exportadoras asentadas en Nuevo León bajo este programa presentan un valor más alto de insumos nacionales utilizados,
+                en comparación de la media nacional y los estados de la frontera norte.</p>
+                <p>“Podemos considerar que en Nuevo León hay una mayor proveeduría y sus exportaciones contienen un mayor valor agregado en su cadena de suministros”, dijo Rivas Rodríguez.</p>
+    
+                <P>Se estima que el valor agregado directo de las exportaciones genera alrededor del 9.6% del Producto Interno Bruto (PIB) estatal,
+                de acuerdo al estudio Determinantes de la Competitividad del Estado de Nuevo León, del Centro de Investigaciones Económicas de la UANL y la Secretaría de Economía estatal.
+                </P>
+    
+                <img src="media/puertolosangeles.webp"  height="400" />
 
-            <h6> Negocios </h6>
-
-            <p> Las exportaciones totales del país alcanzaron 521,010 millones de dólares,con un crecimiento de 18.2% respecto al año previo, mientras que las exportaciones de Nuevo León tuvieron un alza de 23.3%,
-         según datos del Instituto Nacional de Estadística y Geografía (Inegi).</p>  
-            <P> Monterrey, NL. Al cierre de 2022, las exportaciones de Nuevo León registraron un valor de 51,164 millones de dólares,
-            lo que significa un crecimiento anual de 23.3% comparado con los 41,496 millones de dólares registrados el año previo, y aportaron el 9.8% de las exportaciones totales, de acuerdo con cifras del Instituto Nacional de Estadística y Geografía (Inegi).
-            </P>
-            <P>El sector fabricación de equipo de transporte registró un crecimiento del 24% respecto a 2021, y representó el 35.3% de las exportaciones totales.
-            La fabricación de accesorios, aparatos eléctricos y equipo de generación de energía eléctrica registró un 28.6% de crecimiento con una participación de 17.3% a nivel nacional,
-            mientras el sector de fabricación de maquinaria y equipo tuvo un crecimiento de 26.5% y una participación de 11.2% del total de las exportaciones mexicanas.</P> 
-            <p> La fabricación de accesorios, aparatos eléctricos y equipo de generación de energía eléctrica registró un 28.6% de crecimiento con una participación de 17.3% a nivel nacional, 
-            mientras el sector de fabricación de maquinaria y equipo tuvo un crecimiento de 26.5% y una participación de 11.2% del total de las exportaciones mexicanas.</p>
-            <p> Estos tres sectores representan el 63.8% de las exportaciones estatales. La Secretaría de Economía de Nuevo León destacó la recuperación del sector automotriz al alcanzar una participación similar a la de 2019, cuando logró su nivel más alto.
-            </p> 
-            <p> El secretario de Economía estatal, Iván Rivas Rodríguez, comentó que el buen desempeño de las exportaciones se debe a una mayor demanda del mercado estadounidense y a
-         la llegada de nuevas inversiones al estado por la tendencia del nearshoring.</p> 
-            <p> De acuerdo a la información del Programa de la industria manufacturera, maquiladora y de servicios de exportación (IMMEX), las empresas exportadoras asentadas en Nuevo León bajo este programa presentan un valor más alto de insumos nacionales utilizados,
-            en comparación de la media nacional y los estados de la frontera norte.</p>
-            <p>“Podemos considerar que en Nuevo León hay una mayor proveeduría y sus exportaciones contienen un mayor valor agregado en su cadena de suministros”, dijo Rivas Rodríguez.</p>
-
-            <P>Se estima que el valor agregado directo de las exportaciones genera alrededor del 9.6% del Producto Interno Bruto (PIB) estatal,
-            de acuerdo al estudio Determinantes de la Competitividad del Estado de Nuevo León, del Centro de Investigaciones Económicas de la UANL y la Secretaría de Economía estatal.
-            </P>
-
-            <img src="media/puertolosangeles.webp"  height="400" />
+            </div>
+           
         </article>
     </main>
 </div>
+<!--Fin Noticia 3-->
 
-<h3>Contador de Artículos: <p id ="contador" class="numeroArticulos"></p>
-</h3>
+<!--Contador de Noticias Funcional-->
+<div class="contador">
+<h3>Contador de Artículos: <p id ="contador" class="numeroArticulos"></p></h3>
 <script>
     let noticias = document.querySelectorAll(".noticia").length;
     const miElemento = document.getElementById("contador");
     miElemento.innerHTML = noticias;   
 </script>
+</div>
 
 </body>
 
-<footer>
-    <section>
-        <a href="#titulo">Ir al inicio</a>
-    </section>
-    <p>Copyright 2023</p>
-</footer>
+<footer class="pie-pagina"> <!--Footer de la página con sus correspondientes secciones-->
+
+    <!--Botones que llevan a sección de contacto y enviar noticia-->
+        <div class="d-grid gap-2">
+            <a class="btn btn-light" type="button" id="BTN1" href="contacto.html">Contáctanos</a>
+            <a class="btn btn-light" type="button" id="BTN2" href="envianoticia.html">Envía una Noticia</a>
+            <br>
+        </div>
     
+
+    
+    <!--Caja de texto con información sobre los programadores-->
+        <div class="box">
+            <h3>SOBRE NOSOTROS</h3>
+              <p>Somos un grupo de estudiantes de programación haciendo nuestra primera 
+                  página web. ¡Muchas gracias! </p>
+        </div>
+    
+    <!--Caja con enlaces no funcionales a las redes sociales de la página-->
+        <div class="box">
+            <h3>SIGUENOS</h3>
+              <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+                <a href="#" class="fa fa-youtube"></a>
+              </div>
+        </div>
+      
+    <!--Sección de CopyRight y boton funcional para ir al inicio (parte de arriba) de la web-->
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>El Faro</b> - Todos los derechos reservado. </small>
+            <section>
+                <a href="#titulo">Ir al inicio</a>
+            </section>
+        </div>
+        
+    <script src="https://kit.fontawesome.com/c280fe1359.js" crossorigin="anonymous"></script>
+    <!--Fuente para acceder a los iconos de redes sociales-->
+    
+</footer>
+
 </html>

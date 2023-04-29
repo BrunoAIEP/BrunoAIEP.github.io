@@ -1,34 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
-<head>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+<head>   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style> 
-        a {
-            text-decoration: underline;
-            font-weight: normal;
-          }
-          
-          a:hover {
-            text-decoration: none;
-            font-weight: bold;
-          }
-    </style>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
     <title>El Faro</title>
 </head>
 
 
-<body>
-    
+<body class="fondo">
     <div id="date">
         <script>
             // Función para obtener la fecha actual y actualizar el contenido del elemento HTML
@@ -79,38 +67,66 @@
             setInterval(updateTime, 1000);
         </script>
     </div>
+    
+    <header id="titulo"> <!--Identificador para que al presionar el botón ir a inicio lleva la parte de arriba de la web-->
+        <!--Anuncio de la página de noticias generales-->
+        <div class="anuncio">
+            <img src="media/publicidad-airpods.jpg" class="img.responsive" >
+        </div>
+      </header>
+        
+       <!--Barra de navegación del menú--> 
+       <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;"> 
+            <div class="container-fluid">
+              <a class="navbar-brand" href=""></a>
+              <img src="media/logo.png" alt="logo" width="100px" height="50px">  <!--Logo de la página en la barra de navegación-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> 
+                  </li><!--Botón que lleva a la página de inicio de la web-->
+                  <!--Menú desplegable con las categorías de la noticia-->
+                  <li class="nav-item dropdown"> 
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorías
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="general.html">Generales</a></li>
+                      <li><a class="dropdown-item" href="deportes.html">Deportes</a></li>
+                      <li><a class="dropdown-item" href="negocios.html">Negocios</a></li>
+                    </ul> 
+                    <!--Las categorías del menú desplegable-->
+                    <li class="nav-item"> 
+                        <a class="nav-link active" aria-current="page" href="somos.html">¿Quiénes Somos?</a>
+                    </li> <!--Enlace para ir a la sección ¿Quiénes Somos?-->
+                </ul>
+              </div>
+            </div>
+          </nav>   
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      <!--Fuente para tener acceso al Framework Bootstrap y su diseño de Navbar-->
 
-    <header id="titulo">EL FARO</header>
-    <br/><br/>
-    <img src="media/logo.jpg" width="200" height="100"/>
-    <br/><br/>
-    
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
-   
-    
-    <h5>Seleccione una catogoría del menú</h5>
-    <ul class="Menú">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="deportes.html">Deportes</a></li>
-        <li><a href="negocios.html">Negocios</a></li>
-        <li><a href="general.html">Generales</a></li>
-    </ul>
 
 <hr>
-
-<h1>Noticias Generales</h1>
-
+<div class="categoria"> <!--Titulo de la sección de noticias (centrado y mas grande)-->
+    <h1>Noticias Generales</h1>
+</div>
 <hr>
-
-<div class="grid animate__animated animate__backInLeft">
+      
+<!--Grids con cada noticia dentro de ellos-->
+      
+<!--Inicio Noticia 1-->
+<div class="box animate__animated animate__backInLeft">
     <main class="content">
         <article class="noticia">
-            <h6>Sábado 01 abril de 2023 | 16:58</h6>
+            <div class="destacada">
+                <h6>Sábado 01 abril de 2023 | 16:58</h6>
                 <h1>
-                    Orca "Lolita" será liberada tras más de 50 años
-                    en cautiverio: volverá al Pacífico en avión de carga
+                    Orca "Lolita" será liberada tras más de 50 años en cautiverio: volverá al Pacífico en avión de carga
                 </h1>  
 
                 <h6>General</h6>
@@ -128,14 +144,20 @@
                 <video controls>
                     <source src="media/orca.mp4" type="video/mp4">
                 </video>    
+
+            </div>
+            
         </article>
     </main>
 </div>
-       
+<!--Fin Noticia 1-->
+
+<!--Inicio Noticia 2-->
 <div class="grid animate__animated animate__backInLeft">
     <main class="content">
         <article class="noticia">
-            <h6>Jueves 30 marzo de 2023 | 14:23</h6>
+            <div class="nodestacada">
+                <h6>Jueves 30 marzo de 2023 | 14:23</h6>
             <h1>
                 Astrónomos chilenos descubren 
                 2 nuevos planetas desarrollándose en un 
@@ -160,14 +182,20 @@
                 Chile y estudiados por científicos de CATA y 
                 la Pontificia Universidad Católica (PUC).
             </p>
+
+            </div>
+            
         </article>
     </main>
 </div>
+<!--Fin Noticia 2-->
 
+<!--Inicio Noticia 3-->
 <div class="grid animate__animated animate__backInLeft">
     <main class="content">
         <article class="noticia">
-            <h6>Martes 28 marzo de 2023 | 19:10</h6>
+            <div class="nodestacada">
+                <h6>Martes 28 marzo de 2023 | 19:10</h6>
             <h1>
             NASA reconoce a astrofotógrafa chilena 
             por imagen de auroras boreales en The Arctic Henge: ¿Qué es?
@@ -200,30 +228,71 @@
         <audio controls>
             <source src="media/noticiaaudio.mp3" type="audio/mp3">
         </audio>
+
+            </div>
+            
         </article>
     </main>  
 </div>
+<!--Fin Noticia 3-->
 
 
-<h3>Contador de Artículos: <p id ="contador" class="numeroArticulos"></p>
-</h3>
-<script>
-    let noticias = document.querySelectorAll(".noticia").length;
-    const miElemento = document.getElementById("contador");
-    miElemento.innerHTML = noticias;
-       
-</script>
+<!--Contador de Noticias Funcional-->
+<div class="contador">
+    <h3>Contador de Artículos: <p id ="contador" class="numeroArticulos"></p></h3>
+    <script>
+        let noticias = document.querySelectorAll(".noticia").length;
+        const miElemento = document.getElementById("contador");
+        miElemento.innerHTML = noticias;   
+    </script>
+    </div>
+    
+    </body>
+    
+<footer class="pie-pagina"> <!--Footer de la página con sus correspondientes secciones-->
+    
+        <!--Botones que llevan a sección de contacto y enviar noticia-->
+            <div class="d-grid gap-2">
+                <a class="btn btn-light" type="button" id="BTN1" href="contacto.html">Contáctanos</a>
+                <a class="btn btn-light" type="button" id="BTN2" href="envianoticia.html">Envía una Noticia</a>
+                <br>
+            </div>
+        
+        
+        <!--Caja de texto con información sobre los programadores-->
+            <div class="box">
+                <h3>SOBRE NOSOTROS</h3>
+                  <p>Somos un grupo de estudiantes de programación haciendo nuestra primera 
+                      página web. ¡Muchas gracias! </p>
+            </div>
+        
+        <!--Caja con enlaces no funcionales a las redes sociales de la página-->
+            <div class="box">
+                <h3>SIGUENOS</h3>
+                  <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                  </div>
+            </div>
+          
+        <!--Sección de CopyRight y boton funcional para ir al inicio (parte de arriba) de la web-->
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>El Faro</b> - Todos los derechos reservado. </small>
+                <section>
+                    <a href="#titulo">Ir al inicio</a>
+                </section>
+            </div>
+            
+        <script src="https://kit.fontawesome.com/c280fe1359.js" crossorigin="anonymous"></script>
+        <!--Fuente para acceder a los iconos de redes sociales-->
+        
+</footer>
+    
+</html>
     
 
-</body>
 
-
-<footer>
-        <section>
-        <a href="#titulo">Ir al inicio</a>
-    </section>
-    <p>Copyright 2023</p>
-</footer>
-
-</html>
 

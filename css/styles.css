@@ -1,45 +1,77 @@
+
+.title {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    background-image: url(/media/faro.jpg);
+}
+
 header {
     font-family: 'Sofia Sans Condensed', sans-serif;
+    display: flex;
+    min-height: 50px;
+    background-color: #c9d2d0;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    padding: 15px;
+    background-image: url(/media/faro.jpg);
+   }
+
+
+   .fondo{background-image: url(/media/faro.jpg);
+    width: auto;
+    background-repeat: repeat;
+    background-size: cover;
+   }
+.anuncio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/media/faro.jpg);
 }
 
-title {
+.body {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    
+}
+
+.categoria {
+   font-family: 'Sofia Sans Condensed', sans-serif; 
+   font-size: 3pc;
+   text-align: center;
+   
+}
+
+.contador {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show { 
+    color: var(--bs-navbar-active-color);
     font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
-
-.Menú {
-    font-family: 'Sofia Sans Condensed', sans-serif;
+.dropdown-toggle{
+   color: var(--bs-navbar-active-color);
+    font-family: 'Sofia Sans Condensed', sans-serif; 
 }
 
+.dropdown-menu{
+    color: var(--bs-navbar-active-color);
+     font-family: 'Sofia Sans Condensed', sans-serif; 
+}
+
+.btn-light {
+    color: var(--bs-navbar-active-color);
+    font-family: 'Sofia Sans Condensed', sans-serif;    
+}
 
 .noticia {
     font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
-h1 {
+.somos {
     font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
-h3 {
-    font-family: 'Sofia Sans Condensed', sans-serif;
-}
-
-h5 {
-    font-family: 'Sofia Sans Condensed', sans-serif;
-}
-
-
-h6 {
-    font-family: 'Sofia Sans Condensed', sans-serif;
-}
-
-p {
-    font-family: 'Sofia Sans Condensed' sans-serif; 
-}
-
-body {
-    background-color: #f5f5f5;
-}
 .grid{
     background: white;
     color: black;
@@ -47,7 +79,8 @@ body {
     max-width: 1000px;
     margin: 1.6em auto;
     display: grid;
-    gap: 1.6em;   
+    gap: 1.6em;  
+    
 }
 
 .grid > .content,
@@ -67,9 +100,12 @@ body {
     background: white;
     padding: 20px;
     margin-top: 5px;
+    border-radius: 6px;
     color:black;
     transition: all 0.5s ease;
 }
+
+
 
 .content .noticia h6
 .content .noticia h1
@@ -78,12 +114,125 @@ body {
 
 }
 
+.content{
+    display: grid;
+    grid-template-columns: 100%;
+
+}
+
+
+
 .content > .noticia:hover {
     cursor: pointer;
     color: white;
     background: black;
 }
 
+.content > .somos {
+    background: white;
+    padding: 20px;
+    margin-top: 5px;
+    color:black;
+    transition: all 0.5s ease;
+}
+
+.content .somos h6
+.content .somos h1
+.content .somos p {
+    padding: 10px;
+
+}
+
+.content > .somos:hover {
+    cursor: pointer;
+    color: white;
+    background: black;
+}
+
+.destacada:hover {
+    transform: scale(1.05);
+    width: 50em;
+    
+}
+
+.nodestacada:hover {
+    transform: scale(0.85);
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #c9d2d0;
+    padding: 2rem;
+    color: #31231e;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 10px 0px;
+
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px;
+}
+.pie-pagina .grupo-1 .box h3{
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: gray;
+    margin-bottom:  10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: black;
+    margin-right: 10px;
+    background-color: #f5f5f5;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: grey;
+ 
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #fff;
+    padding: 10px 5px ;
+    text-align: center;
+    color: black;
+}
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+.pie-pagina .grupo-2 section {
+    color: black;
+}
+
+.pie-pagina .grupo-2 section:hover {
+    color: blue;
+}
 
 footer {
     background-color: #c9d2d0;
@@ -110,42 +259,35 @@ footer a:hover {
 }
 
 
-form {
+.row {
     font-family: 'Sofia Sans Condensed', sans-serif;
-    width: 450px;
-    margin: auto;
     background: rgba(0,0,0,0.10);
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 20px;
+    border: black;
     border-radius: 7px;
+    resize: none;
 }
 
 
-input, textarea {
+.textarea {
     font-family: 'Sofia Sans Condensed', sans-serif;
-    width: 100%;
     margin-bottom: 20px;
     padding: 7px;
     box-sizing: border-box;
     font-size: 17px;
-    border: none;
-}
-
-textarea {
-    font-family: 'Sofia Sans Condensed', sans-serif;
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
+    border: auto;
     resize: none;
 }
 
-button {
+
+.button {
    color: #fff;
    padding: 20px;
 }
 
-button:hover {
+.button:hover {
     cursor: pointer;
 }
 
@@ -157,15 +299,16 @@ button:hover {
 
 #date {
     font-family: 'Sofia Sans Condensed', sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     text-align: right;
     margin-top: 10px;
+    margin-right: 10px;
 }
 
 #clock {
     font-family: 'Sofia Sans Condensed', sans-serif;
     font-size: 20px;
     text-align: right;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
 }
-
